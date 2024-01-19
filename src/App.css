@@ -64,7 +64,7 @@ button:hover {
 .error {
   color: #ff0000;
   font-size: 14px;
-  margin-top: -8px;
+  margin-top: -18px;
   margin-bottom: 10px;
   display: block;
 }
@@ -80,11 +80,11 @@ button:hover {
 
 .flex-div > div {
   flex: 1;
-  margin: 0 8px;
+  margin: 5px 8px;
 }
 
 .single-div {
-  margin: 0 8px;
+  margin: 5px 8px;
 }
 
 .submit-div {
@@ -115,5 +115,9 @@ button:hover {
 
   .flex-div {
     display: block;
+  }
+
+  .error {
+    margin-top: -8px;
   }
 }
