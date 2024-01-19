@@ -27,7 +27,7 @@ select,
 textarea {
   width: 100%;
   padding: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -107,6 +107,10 @@ button:hover {
 
   button {
     padding: 8px;
+  }
+
+  .main-container {
+    margin: 20px;
   }
 
   .flex-div {

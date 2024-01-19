@@ -83,7 +83,7 @@ const Form = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex-div">
             <div>
-              <label htmlFor="firstName">First Name* :</label>
+              <label htmlFor="firstName">First Name*:</label>
               <input
                 type="text"
                 id="firstName"
@@ -99,7 +99,7 @@ const Form = () => {
             </div>
 
             <div>
-              <label htmlFor="lastName">Last Name* :</label>
+              <label htmlFor="lastName">Last Name*:</label>
               <input
                 type="text"
                 id="lastName"
@@ -116,7 +116,7 @@ const Form = () => {
           </div>
 
           <div className="single-div">
-            <label htmlFor="email">Email* :</label>
+            <label htmlFor="email">Email*:</label>
             <input
               type="email"
               id="email"
@@ -165,7 +165,7 @@ const Form = () => {
                 onChange={handleCountryChange}
                 className={errors.country && "error-border"}
               >
-                <option>Select Country</option>
+                <option value="">Select Country</option>
                 {countries.map((country) => (
                   <option key={country} value={country}>
                     {country}
@@ -187,7 +187,7 @@ const Form = () => {
                 disabled={formData.country === "Select Country"}
                 className={errors.state && "error-border"}
               >
-                <option>Select State</option>
+                <option value="">Select State</option>
                 {statesByCountry[formData.country]?.map((state) => (
                   <option key={state} value={state}>
                     {state}
