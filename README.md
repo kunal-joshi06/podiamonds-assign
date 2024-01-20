@@ -9,7 +9,6 @@ installs node modules
 ### `npm start`
 runs the project
 
-### `npm run build`
 
 ## Form Validations
 Form Validations are managed via javascript logic and react states.
