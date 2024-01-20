@@ -22,6 +22,7 @@ const Form = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [submit, setSubmit] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -54,6 +55,20 @@ const Form = () => {
 
     if (validateForm()) {
       console.log("Form submitted:", formData);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        telephone: "",
+        country: "",
+        state: "",
+        address: "",
+      });
+      setSubmit(true);
+      setTimeout(() => {
+        setSubmit(false);
+      }, [5000]);
     } else {
       console.log("Form validation failed");
     }
@@ -79,6 +94,7 @@ const Form = () => {
   return (
     <>
       <h1>Contact Us</h1>
+      {submit && <h4>Form Submitted Successfully!</h4>}
       <div className="main-container">
         <form onSubmit={handleSubmit}>
           <div className="flex-div">

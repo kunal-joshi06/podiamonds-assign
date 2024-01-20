@@ -25,6 +25,11 @@ h1 {
   margin: 20px 0;
 }
 
+h4 {
+  text-align: center;
+  color: #fff;
+}
+
 form {
   background-color: #fff;
   border: 1px solid #ccc;
